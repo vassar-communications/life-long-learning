@@ -1,0 +1,66 @@
+    .wufoo .hide
+    {
+        @include hidden();
+    }
+    
+    .wufoo .info
+    {
+        padding: 0 0 1.1em;
+    }
+    
+    .wufoo
+    {
+        font-family: inherit;
+    }
+    
+    .wufoo.page
+    {
+        margin-top:1em;
+    }
+    
+    .wufoo input#saveForm
+    {
+        border: solid .25em #444;
+        padding: 4%;
+        font-weight: bold;
+        letter-spacing: .05em;
+        font-size: 1.2em;
+        border-radius: 1em;
+    }
+    
+    .wufoo input#saveForm:hover
+    {
+        background-color: #444;
+        color: #eee;
+        cursor:pointer;
+        border-color: #aaa;
+    }
+
+    .wufoo input.checkbox, input.radio
+    {
+        width: 1em;
+        height: 1em;
+    }
+    
+    .wufoo label.choice
+    {
+        line-height: 1.2;
+        margin-top: -1.1em;
+        padding: 0;
+    }
+    
+    .wufoo li
+    {
+        width: 100%;
+    }
+
+    .wufoo li.threeColumns div span,
+    .wufoo li.twoColumns div span
+    {
+        margin: 0 .1em .25em 0;
+    }
+
+    .wufoo span.choice__text.notranslate
+    {
+        width: 100%;
+    }

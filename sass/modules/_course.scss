@@ -1,0 +1,173 @@
+/* TYPOGRAPHY */
+
+.Course__dates
+{
+    display: inline-block;
+    font-style: italic;
+    margin-bottom: .5em;
+    margin-right: 1em;
+}
+
+.Course__days
+{
+    margin-right: .25em;
+}
+
+.Course__description
+{
+    display: block;
+    margin-bottom: 1.25em;
+}
+
+.Course__limit
+{
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom:.75em;
+}
+
+.Course__limit .Course__label
+{
+    font-weight: bold;
+}
+
+.Course__name,
+.Course__producer
+{
+    font-weight: bold;
+}
+
+.CoursePresenters
+{
+    font-size: .9em;
+}
+
+.CoursePresenters__name,
+{
+    font-size: 1.1em;
+}
+
+.Course__time
+{
+    display: inline-block;
+    margin-right: 1em;
+    text-transform: lowercase;
+}
+
+.Course__title
+{
+    font-size: 1.95em !important;
+    margin-bottom: .15em;
+    margin-top: 0;
+}
+
+.CourseList__heading
+{
+    border-bottom: solid 0.025em hsla(29, 21%, 29%, 0.75); //$primaryColor
+    font-size: 1.4em !important;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+}
+
+.u-folderCourses .ac-NavAnchor--top,
+.u-folderCourses .ac-NavAnchor--top svg
+{
+    display: block !important;
+    visibility: visible !important;
+}
+
+.u-folderCourses .ac-NavAnchor--top path
+{
+    fill:#aaa;
+}
+
+.u-folderCourses .ac-NavAnchor--top svg
+{
+    width:100%;
+}
+
+.u-folderCourses .ac-NavAnchor--top
+{
+    background-color:hsl(0, 0%, 90%);
+    border-bottom-left-radius: .25em;
+    border-top-left-radius: .25em;
+    bottom:1em;
+    color:#aaa;
+    font-weight: bold;
+    position:fixed;
+    right:0;
+    width:4em;
+    z-index: 2;
+}
+
+.u-folderCourses .ac-NavAnchor--top:after
+{
+    border-bottom:0;
+}
+
+.u-folderCourses .ac-NavAnchor--top:hover,
+.u-folderCourses .ac-NavAnchor--top:hover path
+{
+    background-color:hsl(0, 0%, 50%);
+    color:#fff;
+    fill:#fff;
+}
+
+.u-folderCourses .ac-NavAnchor--top:hover:after
+{
+    border:0;
+}
+
+/* LAYOUT */
+@media screen
+{
+    .Course
+    {
+        margin-bottom:2.5em;
+    }
+    
+    .Course__title
+    {
+        display: block;
+    }
+
+    .CourseList
+    {
+        margin-top:2.5em;
+    }
+
+    .CoursePresenters
+    {
+        background-color: $coursePresenterColor;
+        border-radius: .125em;
+        border: solid .05em #aaa;
+        padding: 0 2em 1em;
+    }
+
+    .CoursePresenters__description
+    {
+        display: block;
+        padding-top: .25em;
+    }
+
+    .CoursePresenters__name
+    {
+        display: block;
+        font-weight: bold;
+        margin-top:1.2em;
+    }
+}
+
+@media screen and (min-width: $small)
+{
+    .u-folderCourses .ac-NavAnchor--top
+    {
+        background-color:hsla(0, 0%, 50%, .2);
+    }
+    
+    .u-folderCourses .ac-NavAnchor--top:hover,
+    .u-folderCourses .ac-NavAnchor--top:hover path
+    {
+        background-color:hsla(0, 0%, 50%, .5);
+    }
+}

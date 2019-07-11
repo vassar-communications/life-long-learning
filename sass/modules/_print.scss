@@ -1,0 +1,180 @@
+/****************************************
+/* print.scss */
+/****************************************/
+/* Vassar College Print Stylesheet
+ * v1.0
+ * Last Updated: 2012-06-12 
+ */
+ 
+ @media print
+ {
+	
+	*
+	{
+		background:transparent !important;
+		color:black !important;
+		filter:none !important;
+		-ms-filter:none !important;
+		text-shadow:none !important;
+	}
+	
+	@page
+	{
+		margin:1.5cm 1cm;
+	}
+	
+	a, 
+	a:visited
+	{
+		color:#444 !important;
+		text-decoration:underline;
+	}
+	
+	/**
+	 * Add this for hrefs to be revealed
+	 * Be careful, can lead to poor readability and more pages printed.
+	 */
+	
+	/*  
+	a[href]:after
+	{
+		content:" (" attr(href) ")";
+	}
+	
+	abbr[title]:after
+	{
+		content:" (" attr(title) ")";
+	}
+	
+	a[href^="javascript:"]:after, 
+	a[href^="#"]:after
+	{
+		content:"";
+	}
+	*/
+	
+	body
+	{
+		margin:1em 2em;
+	}
+	
+	h1
+	{
+		margin-top:0;
+	}
+	
+	h2,
+	h3
+	{
+		page-break-after:avoid;
+	}
+	
+	h2,
+	h3,
+	p
+	{
+		orphans:3;
+		widows:3;
+	}
+
+	img
+	{
+		height:auto;
+		max-width:400px;
+	}
+	
+	img,
+	tr
+	{
+		page-break-inside:avoid;
+	}
+	
+	p
+	{
+		margin-bottom:1em;
+	}
+	
+	pre,
+	blockquote
+	{
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	
+	thead
+	{
+		display:table-header-group;
+	}
+	
+	.ac-hiddenVisually,
+	.ac-NavAnchor,
+    .u-Search,
+	.nav
+    {
+		display:none;
+	}
+	
+	.figure
+	{
+		margin-bottom:1em;
+	}
+	
+	.u-lFooter
+	{
+		margin-top:2em;
+	}
+
+    .u-lFooter .u-VCard__info,
+    .u-lFooter .u-List--site
+	{
+        list-style: none;
+        float: none;
+        margin:0 auto;
+        text-align: center;
+        overflow:hidden;
+        width:100%;
+	}
+
+    .u-lFooter .u-List__itemContainer
+    {
+        float:left;
+        margin-right:1em;
+    }
+    
+    .u-lFooter a
+	{
+        border-bottom:0 !important;
+    }
+    
+	.u-lHeader
+	{
+		margin-top:0;
+	}
+
+	.u-pageTitle
+	{
+		margin-top:.5em;
+	}
+     
+    .u-ExtendedHeader img
+    {
+        display:none;
+    }
+     
+    .u-Masthead__siteName,
+    .u-Masthead__siteName:visited,
+    .u-Masthead__siteName--link:link,
+    .u-Masthead__siteName--link:visited
+    {
+        color:#000 !important;
+        text-shadow:none !important;
+    }
+     
+    .u-Masthead__siteName--link,
+    .u-Masthead__siteName
+    {
+        font-size:2em;
+        text-decoration:none;
+        border-bottom: 0;
+    }
+}

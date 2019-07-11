@@ -1,0 +1,37 @@
+.u-lContent 
+{
+    a
+    {
+        transition: background-color $ease, border $ease, color $ease;
+    }
+
+    a:focus,
+    a:hover
+    {
+        background-color: $linkColor;
+        color: $secondaryColor;
+    }
+
+    a:focus,
+    a:hover
+    {
+        border-radius: .25em;    
+    }
+
+    a:visited
+    {
+        border-bottom-color: $linkColorVisited;
+    }
+
+    a:visited:focus,
+    a:visited:hover
+    {
+        background-color: $linkColorVisited;
+        color: $secondaryColor;
+    }
+}
+
+html
+{
+    color:#444;
+}

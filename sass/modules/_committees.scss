@@ -1,0 +1,29 @@
+/* 
+.Committee__list
+{
+    margin-top: .25em;
+    padding-left: 0;
+    list-style: circle;
+}
+*/
+
+.Committee__desc,
+.AdditionalSupport__desc
+{
+    margin-left: 0;
+    margin-bottom: 1.5em;
+}
+
+.Committee__name,
+.AdditionalSupport__name
+{
+    color:hsl(54, 33%, 40%);
+    font-size: 1.3em;
+}
+
+.AdditionalSupport__header
+{
+    font-size:1.5em;
+    margin:1.5em 0 .25em;
+    display:block;
+}

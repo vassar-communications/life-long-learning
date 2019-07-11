@@ -1,0 +1,115 @@
+
+@media screen
+{
+    .u-VCard--site .u-VCard__item:link,
+    .u-VCard--site .u-List__item:link
+    {
+        border-bottom: 1px solid $linkBorderColor;
+        display: block;
+        padding: .25em 0;
+    }
+/*
+    .u-VCard--site .u-VCard__item:link,
+    .u-VCard--site .u-List__item:link,
+    .u-VCard--site .u-VCard__item:link:visited,
+    .u-VCard--site .u-List__item:link:visited,
+    .u-VCard--site .u-VCard__fn:link,
+    .u-VCard--site .u-VCard__fn:link:visited
+    {
+         color:hsl(0, 40%, 60%) !important;
+    }
+  */  
+    .u-VCard--site .u-VCard__fn:link
+    {
+        border:none;
+        font-family: "mrs-eaves-roman-petite-caps", sans-serif;
+        font-size: 2em;
+        line-height: .8;
+    }
+
+/*
+    .u-VCard--site .u-VCard__item:link:hover,
+    .u-VCard--site .u-List__item:link:hover,
+    .u-VCard--site .u-VCard__item:hover:visited,
+    .u-VCard--site .u-List__item:hover:visited
+    {
+        background-color: $primaryColor;
+        color:$secondaryColor !important;
+    }
+    */
+    
+    .u-VCard__adr
+    {
+        line-height: 1.3;
+        margin-bottom: .75em;
+    }
+    
+    .u-VCard__labeloffice,
+    .u-VCard__labelphone
+    {
+        @include hidden();    
+    }
+    
+    .u-VCard .u-VCard__info,
+    .u-VCard .u-List
+    {
+        margin-bottom: 1.2em;
+    }
+    
+    .u-VCard__url
+    {
+        padding-bottom: .175em !important;
+    }
+}
+
+@media screen and (min-width: $tiny)
+{   
+    .u-VCard--site .u-VCard__item:link,
+    .u-VCard--site .u-List__item:link
+    {
+        display: inline-block;
+        width:50%;
+    }
+    
+    .u-VCard--site .u-VCard__fn:link
+    {
+        width:auto;
+    }
+}
+
+@media screen and (min-width: $small)
+{
+    .u-VCard--site .u-VCard__item:link,
+    .u-VCard--site .u-List__item:link
+    {
+        margin: 0 .5em;
+        padding: 0 .5em;
+        width:auto;
+    }
+    
+    .u-VCard--site .u-VCard__fn:link
+    {
+        font-size: 2.25em;
+    }
+}
+
+.u-VCard--site .u-VCard__item:link,
+.u-VCard--site .u-List__item:link,
+.u-VCard--site .u-VCard__item:link:visited,
+.u-VCard--site .u-List__item:link:visited
+{
+    transition: background-color $ease, border $ease, color $ease;
+    border-bottom-color: $VCardLinkColor;
+    color: $VCardLinkColor;
+}
+
+.u-VCard--site .u-List__item:link:focus,
+.u-VCard--site .u-VCard__item:link:focus,
+.u-VCard--site .u-List__item:link:hover,
+.u-VCard--site .u-VCard__item:link:hover
+{
+    background-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: .125em;
+    color: $primaryColorDarker;
+}

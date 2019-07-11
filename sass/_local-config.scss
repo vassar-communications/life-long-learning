@@ -1,0 +1,200 @@
+
+/*    TYPOGRAPHY
+	========== */
+
+//$iconFont: "icons" !important;
+
+$serif: "source-serif-pro",serif;
+$sans-serif: "source-sans-pro",sans-serif;
+$fontWeightNormal: 100;
+$fontWeightBold: bold;
+
+
+/*	LAYOUT
+	====== */
+
+/* Site breakpoints */
+
+$smallScreenHeader: 30em;
+$tiniest: 12em;
+$tinier: 16em;
+$tiny: 18em;
+//$tinyPlus: 37.5em;
+$small: 30em;
+$medium: 50em;
+$large: 62.5em;
+$vwTopLimit: 68em;
+$larger: 75em;
+$largest: 120em;
+
+
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+
+$layoutContainerPadding--tiny: 4%;
+$layoutContainerPadding--medium: 8%;
+
+
+/* COLOR
+	====== */
+
+/* Basic link colors - these colors also affect the Google Search result link colors */
+
+$primaryColor: hsl(0, 25%, 45%);
+$primaryColor: hsl(28, 21%, 29%);
+$secondaryColor: hsl(55, 100%, 98%);
+$backgroundColor: $secondaryColor;
+    
+$coursePresenterColor: hsl(55, 100%, 99%);
+
+$linkColor: hsl(0, 75%, 45%);
+$linkColorHoverFocus: #cc0000;
+$linkColorVisited: #8A7265;
+$linkColorActive: #ED6707;
+$linkBorderColor: lighten($linkColor, 40%);
+$primaryColorLighter: hsla(0, 25%, 25%, .66);
+$primaryColorLighter: hsla(28, 25%, 10%, .66);
+$VCardLinkColor: hsl(4, 70%, 70%);
+
+
+/* Footer */
+
+$u-VCard__site--u-VCard__fn--font-size:1.4em;
+$u-VCard__site--font-size: 1em;
+$u-VCard__site--font-line-height:1.5;
+$u-VCard__site--font: normal 1em $sans-serif;
+$u-VCard__site--labelFont: bold 1em $sans-serif;
+$u-VCard__site--color: inherit;
+$u-VCard__site--labelColor: inherit;
+$u-VCard__site--linkColor: $VCardLinkColor;
+$u-VCard__site--linkColorHoverFocus: #663309;
+$u-VCard__site--linkColorVisited: $VCardLinkColor;
+$u-VCard__site--linkColorActive: #663309;
+//$u-VCard__site--border: none;
+
+
+/* Images */
+
+$u-Figure__caption--font: normal .9em $sans-serif;
+$u-Figure__caption--linkColor: #3789CC;
+$u-Figure__caption--linkColorHoverFocus: #cc0000;
+$u-Figure__caption--linkColorVisited: #666;
+$u-Figure__caption--linkColorActive: #ED6707;
+
+
+/*	Google search results  */
+
+$gsSearchTermHighlighted: #f0f;	/* Currently being overridden by something in Google's default CSS */
+$gs-visibleUrl-long--font: normal 9em $sans-serif !important;
+$gs-visibleUrl-long--color: #006621 !important;
+	
+/* The numbers that represent pages of search results */
+$gsPaginationNumberBorderColor: #eee;
+$gsPaginationCurrentLinkBorder: #ccc;
+$gsPaginationCurrentLinkBackground: #eee;
+$gsPaginationHoverLinkBorder: #ccc;
+$gsPaginationHoverLinkBackground: #ddd;
+
+
+/* LATEST Modules basic */
+
+$sidebarModule__header--font: $fontWeightBold 1.25em/1.1 $sans-serif;
+$sidebarModule--nameFont: bold .9em $sans-serif;
+$sidebarModule--font: 100 .9em $sans-serif;
+$sidebarModule--labelFont: $fontWeightBold .9em $sans-serif;
+$sidebarModule--margin: 0 0 1.5em;
+/* Use these variables to place a bg color on side news announcement items */
+$sidebarModuleAnnouncements__link--background: transparent;
+$sidebarModuleAnnouncements__link--padding: 0;
+$sidebarModule__listItem--border: 1px solid #eee;
+$sidebarModule__header--linkColor: $linkColor;
+$sidebarModule__header--linkColorHoverFocus: $linkColorHoverFocus;
+$sidebarModule__header--linkColorActive: $linkColorActive;
+$sidebarModule__header--linkColorVisited: $linkColorVisited;
+$sidebarModule__header--linkColorHoverFocus: $linkColorHoverFocus;
+
+
+/* Nav */
+
+$u-NavSite__level--1--font: normal 1.1em/1.1 $sans-serif;
+$u-NavSite__level--2--font: normal 1em/1.1 $sans-serif;
+$u-NavSite__level--3--font: normal .9em/1.1 $sans-serif;
+$u-NavSite__level--1--mobileFont: normal 1.95em/1.1 $sans-serif;
+$u-NavSite__level--2--mobileFont: normal 1.4em/1.1 $sans-serif;
+$u-NavSite__level--3--mobileFont: normal 1em/1.1 $sans-serif;
+$u-NavSite__item--mobilePadding: .25em 0;
+$u-NavSite__level--borderColor: 1px solid #eee;
+
+$mobileMenuBackground: #666;
+$mobileMenuLinkColor: #aaa;
+
+
+$buttonBgColor: #ccc;
+$buttonBgColorHoverFocus: #999;
+$buttonBgColorVisited: #ccc;
+$buttonBgColorActive: #666;
+
+$buttonLinkColor: #333;
+$buttonLinkColorHoverFocus: #fff;
+$buttonLinkColorVisited: #333;
+$buttonLinkColorActive: #ccc;
+
+$uniqueButtonBgColor: #666;
+$uniqueButtonBgColorHoverFocus: #999;
+$uniqueButtonBgColorVisited: #666;
+$uniqueButtonBgColorActive: #333;
+
+$uniqueButtonLinkColor: #fff;
+$uniqueButtonLinkColorHoverFocus: #666;
+$uniqueButtonLinkColorVisited: #fff;
+$uniqueButtonLinkColorActive: #ccc;
+
+
+/*	Search
+	------ */
+
+$u-Search__submit--bgColor: #444;
+$u-Search__submit--iconColor: #dec9b6;
+$u-Search__field--bgColor: #000;
+$u-Search__field--textColor: #aaa;
+$u-Search__field--placeholderColor: #888;
+$u-Search__field--font: normal .9em $sans-serif;
+$u-Search__field--textColor: #DEC9B6;
+$u-Search__field--placeholderColor: #888;
+
+$u-Search--borderSize: border-bottom;
+$u-Search--borderSettings: none;
+
+$pointAtWhichSearchMovesToRight: 1040px;
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+
+/*	Mobile search colors
+	-------------------- */
+$searchBtnColor--activated: #f00;
+
+
+/*	Mobile search and menu colors
+	----------------------------- */	
+$searchAndMenuBtnBackground--activated: #000;	/* The background color of a button, when activated */
+
+
+/*	Mobile search colors
+	-------------------- */
+$mobileHeaderBg: #000;					/* The background of the "Vassar College" area */
+$searchAndMenuBtnBackground: #000;		/* The background of the search and menu buttons */
+$searchAndMenuBtnColor: #d94;			/* The color of the search icon and Menu text */
+$searchBtnAndMenuBtnDividerColor: #000;	/* The color of the space between search and menu */
+
+$mobileSearchBackground: #000;
+
+$searchType: Helvetica, Arial, sans-serif;
+$mobileHeaderHeight: 13%;
+
+$searchHeight: 2em;
+$searchPositionTop: 2em;
+$searchPositionRight: 2em;
+
+$figuemargin: 2.5%;

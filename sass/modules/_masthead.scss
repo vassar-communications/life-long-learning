@@ -1,0 +1,273 @@
+
+.u-lHeader {
+    background-color: $primaryColor;
+    border-bottom: solid $primaryColorLighter .3em;
+}
+
+.u-Masthead__siteName
+{
+    font-family: "europa", sans-serif;
+    font-family: "mrs-eaves-roman-petite-caps", sans-serif;
+    font-size: 22vw;
+    font-weight: normal;
+    letter-spacing: .005em;
+    line-height: .7;
+    margin: 0 0 .5em;
+    text-shadow: 0.04em 0.04em 0.01em hsla(0, 0%, 0%, 0.5);
+}
+
+.u-Masthead__siteName--link:link,
+.u-Masthead__siteName--link:visited
+{
+    color: $secondaryColor !important;
+}
+
+@media screen
+{
+    .u-Masthead
+    {
+        margin-top: 3.125em;
+        padding-top: 40%;
+    }
+    
+    .u-Masthead .icon-back svg
+    {
+        float: none;
+        vertical-align: middle;
+        height:auto;
+        width: 100%;
+    }
+    
+    .u-Masthead__siteName
+    {
+        margin-bottom: 0;
+    }
+    
+    .u-Masthead__siteName--link
+    {
+        display: inline-block;
+        padding-bottom: .5em;
+    }
+    
+    .u-Masthead__vassar
+    {
+        height:auto;
+    }
+    
+    .u-Masthead__vassar--link
+    {
+        display: block;
+        //min-height: 4.125em;
+        //min-width: 10em;
+        height:auto;
+        line-height: 1;
+        margin-top: 3.25em;
+        min-height: 0;
+        min-width: 0;
+        position: relative;
+        //padding: 1em 0;
+        padding:$layoutContainerPadding--medium;
+        width: 100%;
+        z-index: 1;
+
+        //padding: 8% 5%;
+    }
+    
+    .u-Masthead__vassar--link:hover path
+    {
+        fill: #000;
+    }
+
+    .u-Masthead__vassar--link:focus,
+    .u-Masthead__vassar--link:hover
+    {
+        background-color:#fff
+    }
+    
+    .u-Masthead__vassar--link > svg
+    {
+        @include hidden();
+    }
+    
+    .u-ExtendedHeader
+    {
+        margin: 0 -10% 0;
+    }
+    
+    .u-ExtendedHeader img
+    {
+        width:100%;
+    }
+}
+
+@media screen and (min-width: $tiniest)
+{    
+    .u-Masthead
+    {
+        margin-top: 0;
+        padding-top: 28%;
+    }
+
+    .u-Masthead .icon-back svg
+    {
+        margin: 0 .5em;
+    }
+    
+    .u-Masthead__ID
+    {
+        left: 5%;
+        position:absolute;
+        right: 5%;
+        top: 35%;
+    }
+
+    .u-Masthead__siteName
+    {
+        font-size: 18vw;
+    }
+
+    .u-Masthead__vassar--link
+    {
+        height:auto;
+        line-height: 0;
+        margin-top:0;
+        max-width: 50%;
+        min-height: 0;
+        min-width: 0;
+        padding: $mobileHeaderHeight 0;
+    }
+}
+
+@media screen and (min-width: $tinier)
+{
+    .u-Masthead
+    {
+        padding-top: 20%;
+    }
+    
+    .u-Masthead__siteName
+    {
+        font-size: 11vw;
+    }
+
+    .u-Masthead__vassar--link
+    {
+        padding: 10.05% 0;
+    }
+}
+
+@media screen and (min-width: $small)
+{
+    .u-Masthead
+    {
+        padding-top: 5%;
+    }
+        
+    .u-Masthead__ID
+    {
+        display: block;
+        left: 5%;
+        position: relative;
+        right: 5%;
+        margin-top: 23%;
+    }
+
+	.u-Masthead__siteName
+    {
+	    font-size: 8vw;
+    }
+    
+    .u-Masthead__vassar
+    {
+        position: absolute;
+        right: auto;
+        //top: 11%;
+        width:100%;
+    }
+    
+    .u-Masthead__vassar--link
+    {
+        left:1.5%;
+        min-height: auto;
+        padding: 0;
+        width: 18%;
+    }
+        
+    .u-Masthead .icon-back svg
+    {
+        width: auto;        
+    }
+    
+    .u-Masthead__vassar--link svg
+    {
+        @include visible;
+        filter:url(#dropshadow);
+    }
+    
+    .u-Masthead__vassar--link > svg
+    {
+        @include hidden;
+    }
+}
+
+
+@media screen and (min-width: $medium)
+{
+    .u-Masthead
+    {
+        padding-top: 0;
+    }
+    
+    .u-Masthead__siteName
+    {
+	    font-size: 6vw;
+    }
+    
+    .u-Masthead__vassar--link
+    {
+        float: right;
+        left:auto;
+        right:5%;
+        width: 12%;
+    }
+    
+    .u-Masthead__vassar--link:hover path
+    {
+        fill: inherit;
+    }
+
+    .u-Masthead__vassar--link:focus,
+    .u-Masthead__vassar--link:hover
+    {
+        background-color:transparent;
+    }
+}
+
+@media screen and (min-width: $vwTopLimit)
+{
+    .u-lHeader
+    {
+        padding-top: emFromPercentAndMQ(3%, $vwTopLimit);
+    }
+    
+    .u-Masthead__siteName
+    {
+	    font-size: emFromVWAndMQ(6vw, $vwTopLimit);
+    }
+
+    .u-Masthead__vassar
+    {
+        top: emFromPercentAndMQ(3%, $vwTopLimit);
+    }
+
+    .u-Masthead__vassar--link
+    {
+        width: emFromPercentAndMQ(12%, $vwTopLimit);
+    }
+
+    .u-Masthead__ID
+    {
+        margin-top: 0;
+    }
+}
+

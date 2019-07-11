@@ -1,0 +1,27 @@
+
+@media screen
+{
+}
+
+@media screen and (min-width: $small)
+{
+   .u-Search
+    {
+		//left: $layoutContainerPadding--medium;
+	}
+}
+
+@media screen and (min-width: $medium)
+{		
+    .u-Search {
+		width: 20.5%;
+	}
+}
+
+@media screen and (min-width: $large)
+{
+    .u-Search
+    {
+        float: left;
+    }
+}

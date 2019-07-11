@@ -1,0 +1,238 @@
+
+.ac-NavAnchor--menu
+{
+    font-family: $sans-serif;
+}
+
+@media screen
+{   
+    #navigation:target .u-NavSite__itemContainer:last-child .u-NavSite__item:after
+    {
+        border-bottom:0;
+    }
+
+    .ac-NavAnchor--top
+    {
+        margin-bottom:0;
+    }
+
+    .ac-NavAnchor--top,
+    .u-NavSite__item
+    {
+        margin-top: -.0125em;
+        position: relative;
+        transition: background-color $ease, border $ease, color $ease;
+    }
+
+    .ac-NavAnchor--top:after,
+    .u-NavSite__item:after
+    {
+        border-bottom: solid .0125em;
+        bottom:0;
+        content: "";
+        left:0;
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    
+    .ac-NavAnchor--top,
+    .u-NavSite__item,
+    .u-NavSite__item:visited
+    {
+        color: $secondaryColor;
+    }
+
+    .ac-NavAnchor--menu:hover,
+    .ac-NavAnchor--top:hover,
+    .u-NavSite__item:hover,
+    .ac-NavAnchor--menu:focus,
+    .ac-NavAnchor--top:focus,
+    .u-NavSite__item:focus
+    {
+        background-color: $backgroundColor;
+        color: #000;
+        z-index: 1;
+    }
+
+    .ac-NavAnchor--top:hover:after,
+    .u-NavSite__item:hover:after,
+    .ac-NavAnchor--top:focus:after,
+    .u-NavSite__item:focus:after
+    {
+        border-bottom:solid .0125em #000;
+        border-top:solid .0125em #000;
+        top:-.025em;
+    }
+    
+    .u-NavSite__item--isCurrent:link:after
+    {
+        border:solid .125em $secondaryColor;    
+    }
+    
+    .u-NavSite
+    {
+        padding: 0;
+    }
+    
+    .u-NavSite__itemContainer:last-child .u-NavSite__item
+    {
+        //padding-bottom: .5em;
+    }
+        
+    .u-VCard--site .u-List__itemContainer
+    {
+        margin:0;
+    }
+    
+    .u-NavSite__main
+    {
+        margin-bottom: 4em;
+    }
+    
+    .u-NavSite__main,
+    #navigation:target .u-NavSite__level--1
+    {
+        background-color: $primaryColor;
+    }
+    
+    .ac-NavAnchor--menu
+    {
+        line-height: 1.4;
+        letter-spacing: normal;
+        font-weight: normal;
+        min-height: 0;
+        min-width: 0;
+        padding:1em 0.6em;
+    }
+}
+
+
+@media screen and (min-width: $tiniest)
+{    
+    .ac-NavAnchor--menu
+    {
+        line-height: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    .ac-NavAnchor--menu
+    {
+        padding: $mobileHeaderHeight 0.6em;
+    }
+}
+
+@media screen and (min-width: $tinier)
+{
+    .ac-NavAnchor--menu
+    {
+        padding-top:10%;
+        padding-bottom:10%;
+    }
+}
+
+@media screen and (min-width: $small)
+{
+    .u-NavSite
+    {
+        font-size: 1em;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+
+    .u-NavSite__item
+    {
+        padding: 1em .5em;
+    }
+
+    .u-NavSite__item,
+    .u-NavSite__item:visited
+    {
+        color: darken($primaryColor, 20%);;
+    }
+
+    .u-NavSite__item:after
+    {
+        //border-bottom: 0;
+        border-bottom-color:$primaryColor;
+    }
+
+    .u-NavSite__item:hover:after,
+    .u-NavSite__item:visited:hover:after
+    {
+        border-bottom: solid .33em #000;
+    }
+
+    .u-NavSite__item--isCurrent,
+    {
+        background-color: hsl(29, 50%, 85%);
+    }
+    
+    .u-NavSite__item--isCurrent:hover:after,
+    .u-NavSite__item--isCurrent:visited:hover:after
+    {
+        border-bottom-color: $backgroundColor;
+    }
+
+    .u-NavSite__item:hover,
+    .u-NavSite__item:visited:hover
+    {
+        background-color: $primaryColor;
+        color: $secondaryColor;
+        padding-bottom: 1.25em;
+    }
+    
+    .u-NavSite__item--isCurrent:hover,
+    .u-NavSite__item--isCurrent:visited:hover
+    {
+        padding-bottom: 1em;
+    }
+
+    .u-NavSite__item--isCurrent:link:after
+    {
+        border:0;
+        border-bottom:solid .33em $primaryColor;
+    }
+    
+    .u-NavSite__itemContainer
+    {
+        display: inline-block;
+    }
+    
+    .u-NavSite__level--1
+    {
+        width: 100%;
+    }
+    
+    .u-NavSite__main,
+    #navigation:target .u-NavSite__level--1
+    {
+        background-color: $secondaryColor;
+    }
+}
+
+@media screen and (min-width: $medium)
+{
+    .u-NavSite
+    {
+        font-size: 1.2em;
+    }
+
+    .u-NavSite__itemContainer
+    {
+		margin-top: 0;
+	}
+}
+
+.ac-NavAnchor--menu,
+.ac-NavAnchor--menu:visited
+{
+    color:#fff;    
+}
+
+.ac-NavAnchor--top
+{
+    border-bottom:0;
+}

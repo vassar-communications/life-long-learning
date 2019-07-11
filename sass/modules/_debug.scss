@@ -1,0 +1,43 @@
+/****************************************
+/* debug.scss */
+/****************************************/
+
+@mixin mq($mq){
+    @if $mq {
+        $mq : '#{$mq} em';
+	}
+	@else {
+		$mq : '0 em';
+	}
+    html:before
+    {
+        content:$mq;
+    }
+}
+
+$width: 0;
+
+@media screen and (min-width:0em)
+{    
+    html:before
+    {
+        background-color: hsla(0,0%,16%,0.75);
+        color:#eee;
+        content:"0 em";
+        font-size: 1em;
+        font-weight: bold;
+        padding:1em;
+        position: fixed;
+        right:0;
+        text-align: center;
+        z-index: 10;
+    }
+}
+
+@while $width < 150 {
+    @media screen and (min-width:#{$width}em)
+    {
+        @include mq($width);
+    }
+    $width: $width + 1;
+}

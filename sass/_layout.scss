@@ -1,0 +1,87 @@
+
+@media screen
+{
+    html
+    {
+        padding:0;
+    }
+    
+    body
+    {
+        margin:0;
+    }
+    
+    .u-lAside
+    {
+        @include hidden();
+    }
+    
+	.u-lFooter
+    {
+		padding: 4em $layoutContainerPadding--medium;
+	}
+
+    .u-lMain
+    {
+        background-color: $secondaryColor;
+        padding: 1em $layoutContainerPadding--tiny;
+    }
+    
+    .u-lHeader
+    {
+        padding: $layoutContainerPadding--medium $layoutContainerPadding--medium 0;
+    }
+    
+    .u-pageHome h2:first-child
+    {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: $small)
+{	
+    .u-lContent
+    {
+        float: none;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+
+ 	.u-lFooter
+    {
+		padding: 2em $layoutContainerPadding--medium;
+	}
+
+    .u-lHeader
+    {
+		padding: $layoutContainerPadding--tiny $layoutContainerPadding--tiny 0;
+    }
+
+    .u-lMain
+    {
+		padding: 6em $layoutContainerPadding--medium $layoutContainerPadding--medium;
+        width:100%;
+	}
+}
+
+@media screen and (min-width: $medium)
+{
+    .u-lHeader
+    {
+		padding-top: 3%;
+    }
+     
+    .u-lContent
+    {
+        max-width: 35em;
+        width:85%;
+    }
+}
+
+@media screen and (min-width: $larger)
+{
+    body
+    {
+        max-width: 100%;
+    }
+}
