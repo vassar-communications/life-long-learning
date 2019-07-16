@@ -1,33 +1,38 @@
 .u-lContent 
 {
-    a
+    a[href]
     {
         transition: background-color $ease, border $ease, color $ease;
     }
 
-    a:focus,
-    a:hover
+    a[href]:focus,
+    a[href]:hover
     {
         background-color: $linkColor;
         color: $secondaryColor;
     }
 
-    a:focus,
-    a:hover
+    a[href]:focus,
+    a[href]:hover
     {
         border-radius: .25em;    
     }
 
-    a:visited
+    a[href]:visited
     {
         border-bottom-color: $linkColorVisited;
     }
 
-    a:visited:focus,
-    a:visited:hover
+    a[href]:visited:focus,
+    a[href]:visited:hover
     {
         background-color: $linkColorVisited;
         color: $secondaryColor;
+    }
+    
+    a:not([href])
+    {
+        color: inherit;
     }
 }
 
