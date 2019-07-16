@@ -1,5 +1,21 @@
 /* TYPOGRAPHY */
 
+details summary>*
+{
+    margin-left: 2.5vh;
+}
+
+summary:focus,
+summary:hover
+{
+    cursor: pointer;
+}
+
+.Course
+{
+    margin-bottom: 0;
+}
+
 .Course__dates
 {
     display: inline-block;
@@ -19,32 +35,22 @@
     margin-bottom: 1.25em;
 }
 
+.Course__description,
+.CoursePresenters
+{
+    margin-left: 1em;
+}
+
 .Course__limit
 {
     display: inline-block;
-    font-weight: bold;
     margin-bottom:.75em;
-}
-
-.Course__limit .Course__label
-{
-    font-weight: bold;
 }
 
 .Course__name,
 .Course__producer
 {
     font-weight: bold;
-}
-
-.CoursePresenters
-{
-    font-size: .9em;
-}
-
-.CoursePresenters__name,
-{
-    font-size: 1.1em;
 }
 
 .Course__time
@@ -56,17 +62,33 @@
 
 .Course__title
 {
-    font-size: 1.95em !important;
+    font-size: 1.25em !important;
     margin-bottom: .15em;
-    margin-top: 0;
+    margin-top: -.95em;
 }
 
 .CourseList__heading
 {
     border-bottom: solid 0.025em hsla(29, 21%, 29%, 0.75); //$primaryColor
     font-size: 1.4em !important;
+    margin-bottom: .5em;
+    margin-top: .75em;
+}
+
+.CourseList__heading-bold:first-of-type
+{
     margin-bottom: 1em;
-    margin-top: 1.5em;
+}
+
+.CoursePresenters
+{
+    font-size: .9em;
+    margin-bottom: 2em;
+}
+
+.CoursePresenters__name,
+{
+    font-size: 1.1em;
 }
 
 .u-folderCourses .ac-NavAnchor--top,
@@ -120,12 +142,7 @@
 
 /* LAYOUT */
 @media screen
-{
-    .Course
-    {
-        margin-bottom:2.5em;
-    }
-    
+{    
     .Course__title
     {
         display: block;
@@ -171,3 +188,20 @@
         background-color:hsla(0, 0%, 50%, .5);
     }
 }
+
+
+
+
+
+
+
+    
+    .u-lContent [href*=".pdf"]
+   {
+       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 551"><style>path{fill:%23e01f00}path[fill="%23fff"]{fill:%23fff}<\/style><path fill="%23fff" d="M86 540V11h229l149 160v369z"/><path d="M310 22l75 80 67 73v354H98V22h213m10-22H75v551h399V166l-73-79-81-87z"/><path d="M0 220h551v264H0z"/><path d="M310 175V0l165 175z"/><path fill="%23fff" d="M155 363c-9 8-22 12-40 12H82v63H50V263h68c15 0 28 5 37 14s14 23 14 42c0 20-5 35-14 44zm-25-63c-4-4-10-6-18-6H83v51h29c8 0 14-2 18-6s6-11 6-20-2-16-6-19zm175-33c11 4 20 12 27 22 5 9 9 18 11 29l3 28c0 24-4 43-13 59a56 56 0 0 1-53 33h-68V263h68l25 4zm-61 27v114h31c15 0 26-9 33-26 3-9 5-20 5-33 0-18-3-32-8-41-5-10-15-14-30-14h-31zm144-30h112v30h-80v41h70v30h-70v73h-33V264z"/></svg>'),linear-gradient(transparent, transparent);
+   }
+    
+    .u-lContent [href*=".pdf"]:hover
+    {
+        background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 551"><style>path{fill:%23fff}path[fill="%23fff"]{fill:%23e01f00}<\/style><path fill="%23fff" d="M86 540V11h229l149 160v369z"/><path d="M310 22l75 80 67 73v354H98V22h213m10-22H75v551h399V166l-73-79-81-87z"/><path d="M0 220h551v264H0z"/><path d="M310 175V0l165 175z"/><path fill="%23fff" d="M155 363c-9 8-22 12-40 12H82v63H50V263h68c15 0 28 5 37 14s14 23 14 42c0 20-5 35-14 44zm-25-63c-4-4-10-6-18-6H83v51h29c8 0 14-2 18-6s6-11 6-20-2-16-6-19zm175-33c11 4 20 12 27 22 5 9 9 18 11 29l3 28c0 24-4 43-13 59a56 56 0 0 1-53 33h-68V263h68l25 4zm-61 27v114h31c15 0 26-9 33-26 3-9 5-20 5-33 0-18-3-32-8-41-5-10-15-14-30-14h-31zm144-30h112v30h-80v41h70v30h-70v73h-33V264z"/></svg>');
+    }

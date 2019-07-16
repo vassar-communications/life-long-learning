@@ -19,7 +19,7 @@
     .ac-NavAnchor--top,
     .u-NavSite__item
     {
-        margin-top: -.0125em;
+        margin-top: 0;
         position: relative;
         transition: background-color $ease, border $ease, color $ease;
     }
@@ -67,7 +67,14 @@
     
     .u-NavSite__item--isCurrent:link:after
     {
-        border:solid .125em $secondaryColor;    
+        //border:solid .125em $secondaryColor;    
+    }
+    
+    .u-NavSite__item--isCurrent
+    {
+        background-color:$secondaryColor;
+        color: #000 !important;
+        z-index: 1;
     }
     
     .u-NavSite
@@ -79,7 +86,12 @@
     {
         //padding-bottom: .5em;
     }
-        
+    
+    .u-NavSite__item
+    {
+        padding: .5em 7%;
+    }
+    
     .u-VCard--site .u-List__itemContainer
     {
         margin:0;
@@ -144,7 +156,9 @@
 
     .u-NavSite__item
     {
-        padding: 1em .5em;
+        font-size: .925em;
+        letter-spacing: -.025em;
+        padding: 1em .3em;
     }
 
     .u-NavSite__item,
@@ -213,7 +227,18 @@
     }
 }
 
-@media screen and (min-width: $medium)
+
+@media screen and (min-width: 45em)
+{
+    .u-NavSite__item
+    {
+        font-size: 1em;
+        letter-spacing: 0;
+        padding: 1em .5em;
+    }
+}
+
+@media screen and (min-width: 56em)
 {
     .u-NavSite
     {

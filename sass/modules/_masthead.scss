@@ -8,7 +8,7 @@
 {
     font-family: "europa", sans-serif;
     font-family: "mrs-eaves-roman-petite-caps", sans-serif;
-    font-size: 22vw;
+    //font-size: 22vw;
     font-weight: normal;
     letter-spacing: .005em;
     line-height: .7;
@@ -24,12 +24,18 @@
 
 @media screen
 {
+    .u-lHeader
+    {
+        padding: 0;
+    }
+
     .u-Masthead
     {
-        margin-top: 3.125em;
-        padding-top: 40%;
+        margin-top: 3.75em;
+        position: relative;
+        //padding-top: 40%;
     }
-    
+        
     .u-Masthead .icon-back svg
     {
         float: none;
@@ -46,7 +52,8 @@
     .u-Masthead__siteName--link
     {
         display: inline-block;
-        padding-bottom: .5em;
+        padding-bottom: .25em;
+        padding-top: .25em;
     }
     
     .u-Masthead__vassar
@@ -96,16 +103,16 @@
     
     .u-ExtendedHeader img
     {
-        width:100%;
+        width:84%;
     }
 }
 
 @media screen and (min-width: $tiniest)
-{    
+{
     .u-Masthead
     {
-        margin-top: 0;
-        padding-top: 28%;
+        //margin-top: 0;
+        //padding-top: 28%;
     }
 
     .u-Masthead .icon-back svg
@@ -140,9 +147,14 @@
 
 @media screen and (min-width: $tinier)
 {
+    .u-ExtendedHeader img
+    {
+        height: auto;
+    }
+
     .u-Masthead
     {
-        padding-top: 20%;
+        //padding-top: 20%;
     }
     
     .u-Masthead__siteName
@@ -160,7 +172,7 @@
 {
     .u-Masthead
     {
-        padding-top: 5%;
+        //padding-top: 5%;
     }
         
     .u-Masthead__ID
@@ -215,7 +227,7 @@
 {
     .u-Masthead
     {
-        padding-top: 0;
+        //padding-top: 0;
     }
     
     .u-Masthead__siteName
@@ -247,7 +259,7 @@
 {
     .u-lHeader
     {
-        padding-top: emFromPercentAndMQ(3%, $vwTopLimit);
+        //padding-top: emFromPercentAndMQ(3%, $vwTopLimit);
     }
     
     .u-Masthead__siteName
@@ -271,3 +283,27 @@
     }
 }
 
+.u-Masthead__siteName
+{
+    background: -moz-linear-gradient(bottom, #000 0%, transparent 100%);
+    background: -webkit-linear-gradient(bottom, #000 0%, transparent 100%);
+    background: linear-gradient(to top, #000 0%, transparent 100%);
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    padding-left: 3%;
+    padding-top: .25em;
+    right: 0;
+}
+
+@media screen and (min-width: $small)
+{        
+    .u-Masthead__siteName
+    {
+        margin-top: 1.4em;
+    }
+    .u-Masthead {
+        margin-top: 0;
+    }
+}
